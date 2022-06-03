@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css?family=Khula&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #fff;
+  font-family: sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  text-align: center;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.start {
+  font-size: 1.5rem
+}
+
+a:hover {
+  color: #16D9E3;
+}
+
+.start {
+  font-size: 2rem;
+  transition: .3s;
+}
+
+.start:hover {
+  color: #16D9E3;
+}
+
+h1 {
+  line-height: 1.4;
+  font-size: 4rem;
+}
+
+.screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  transition: margin 0.5s ease-out;
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,193,217,1) 0%, rgba(184,0,255,1) 100%, rgba(0,0,0,1) 100%, rgba(0,0,0,1) 100%, rgba(0,198,43,1) 100%, rgba(255,255,255,1) 100%);
+}
+
+.screen.up {
+  margin-top: -100vh;
+}
+
+.time-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.time-list li {
+  margin: 10px;
+}
+
+.time-btn {
+  background-color: transparent;
+  border: 2px solid #C0C0C0;
+  color: #fff;
+  cursor: pointer;
+  font-family: inherit;
+  padding: .5rem 1rem;
+  font-size: 1.5rem;
+  transition: .3s;
+}
+
+.time-btn:hover {
+  border: 2px solid #16D9E3;
+  color: #16D9E3;
+  box-shadow: 0px 0px 15px #16D9E3;
+  box-shadow: 0px 0px 15px #16D9E3;
+}
+
+.hide {
+  opacity: 0;
+}
+
+.saw {
+  opacity: 1;
+}
+
+.primary {
+  color: #e32e16;
+}
+
+.board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 500px;
+  height: 500px;
+  background: linear-gradient(118.38deg, #29323C -4.6%, #485563 200.44%);
+  box-shadow: -8px -8px 20px #2A333D, 10px 7px 20px #475462;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.board2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 500px;
+  height: 500px;
+  background-image: url('https://ndsmi.by/images/6.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: -8px -8px 20px #2A333D, 10px 7px 20px #475462;
+  border-radius: 30px;
+  overflow: hidden;
+  opacity: 1;
+}
+
+.circle {
+  background-image: url('https://i.ytimg.com/vi/CapEWnNC184/maxresdefault.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.back {
+  border: none;
+  background-color: transparent;
+  font-size: 30px;
+  color: #16D9E3;
+  margin-top: 10px;
+  text-transform: uppercase;
+  opacity: 0;
+}
+
+.score-text {
+  color: #D500E0;
+  font-family: sans-serif;
+  font-size: 85px;
+  position: absolute;
+  bottom: 70%;
+}
